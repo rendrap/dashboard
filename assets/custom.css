@@ -1,0 +1,14 @@
+nav .active {
+  position: relative;
+  color: var(--blue); }
+  nav .active:before {
+    content: '';
+    position: absolute;
+    background-color: var(--blue);
+    border-radius: 3px;
+    top: auto;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 2px; }

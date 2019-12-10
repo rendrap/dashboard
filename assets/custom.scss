@@ -1,0 +1,20 @@
+nav .active {
+  position: relative;
+  color: var(--blue);
+  &:before {
+    content: '';
+    position: absolute;
+    // bottom: 0;
+    // top: 0;
+    // left: -20px;
+    // width: 2px;
+    background-color: var(--blue);
+    border-radius: 3px;
+    top: auto;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 2px;
+  }
+}
