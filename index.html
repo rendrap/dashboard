@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<title>Twyst Inventory</title>
+
+<link rel="stylesheet" href="/assets/application.css" />
+<script src="/packs/js/application.js" d></script>
+</head>
+<body class='d-flex flex-column asset_types_analysis' data-user-id='2'>
+<div class='d-flex flex-column flex-md-row align-items-center px-md-4 bg-white border-bottom shadow-sm'>
+<div class='container-fluid'>
+<div class='d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white'>
+<h5 class='my-0 mr-md-auto font-weight-normal'>
+<a href="http://localhost:3000/"><img width="100" src="http://localhost:3000/assets/logo-45eb9dac55f37d673d48431e618f9e9465f50e6c950993c6dae554392901b0c7.png" />
+</a></h5>
+<nav class='my-2 my-md-0 mr-md-3 text-nowrap'>
+<a class="p-2 text-dark" alt="Analysis" href="/asset_types/analysis"><span class='d-md-none d-inline'>
+<i class='fa fa-2x fa-pie-chart'></i>
+</span>
+<span class='d-none d-md-inline'>
+<i class='fa fa-pie-chart'></i>
+Analysis
+</span>
+</a><a class="p-2 text-dark" alt="Team" href="/account_members"><span class='d-md-none d-inline'>
+<i class='fa fa-2x fa-group'></i>
+</span>
+<span class='d-none d-md-inline'>
+<i class='fa fa-group'></i>
+Team
+</span>
+</a><a class="p-2 text-dark" alt="Upload" href="/asset_uploads/new"><span class='d-md-none d-inline'>
+<i class='fa fa-2x fa-upload'></i>
+</span>
+<span class='d-none d-md-inline'>
+<i class='fa fa-upload'></i>
+Upload
+</span>
+</a><a class="p-2 text-dark" alt="Inventory" href="/asset_inventories"><span class='d-md-none d-inline'>
+<i class='fa fa-2x fa-barcode'></i>
+</span>
+<span class='d-none d-md-inline'>
+<i class='fa fa-barcode'></i>
+Inventory
+</span>
+</a><a class="p-2 text-dark" alt="Print Queue" href="/asset_print_jobs"><span class='d-md-none d-inline'>
+<i class='fa fa-2x fa-print'></i>
+</span>
+<span class='d-none d-md-inline'>
+<i class='fa fa-print'></i>
+Print Queue
+</span>
+</a></nav>
+<ul class='navbar-nav ml-auto d-none d-md-inline'>
+<li class='nav-item dropdown'>
+<a aria-expanded='false' aria-haspopup='true' class='text-nowrap nav-link text-muted' data-toggle='dropdown' href='#' role='button'>
+<span class='d-sm-inline'>
+<div class='d-inline d-sm-none'>
+<i class='fa fa-user'></i>
+</div>
+<div class='d-none d-sm-inline'>
+3 L
+</div>
+</span>
+<i class='fa fa-chevron-down float-right ml-2'></i>
+</a>
+<div class='dropdown-menu dropdown-menu-center'>
+<a class="dropdown-item p-2" href="/account"><i class='ti-gear m-r-5 m-l-5'></i>
+Account Settings
+</a><a class="dropdown-item p-2 text-danger" rel="nofollow" data-method="delete" href="/users/sign_out"><i class='fa fa-power-off m-r-5 m-l-5'></i>
+Log out
+</a></div>
+</li>
+
+</ul>
+<ul class='navbar-nav d-md-none d-inline'>
+<li class='nav-item dropdown'>
+<a aria-expanded='false' aria-haspopup='true' class='text-nowrap nav-link text-muted' data-toggle='dropdown' href='#' role='button'>
+<span class='d-sm-inline'>
+<div class='d-inline d-sm-none'>
+<i class='fa fa-user'></i>
+</div>
+<div class='d-none d-sm-inline'>
+3 L
+</div>
+</span>
+<i class='fa fa-chevron-down float-right ml-2'></i>
+</a>
+<div class='dropdown-menu dropdown-menu-center'>
+<a class="dropdown-item p-2" href="/account"><i class='ti-gear m-r-5 m-l-5'></i>
+Account Settings
+</a><a class="dropdown-item p-2 text-danger" rel="nofollow" data-method="delete" href="/users/sign_out"><i class='fa fa-power-off m-r-5 m-l-5'></i>
+Log out
+</a></div>
+</li>
+
+</ul>
+</div>
+
+</div>
+</div>
+<div id='main-wrapper'>
+<div class='container-fluid'>
+
+<div class='row'>
+<div class='col-md-3 mb-2 mt-2'>
+<div class='card bg-success text-white'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>Total No. of RFID tags</h5>
+</div>
+<div class='card-text'>
+<h2>0</h2>
+<p>
+0
+Rejected
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class='col-md-3 mb-2 mt-2'>
+<div class='card bg-primary text-white'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>Total Asset Value</h5>
+</div>
+<div class='card-text'>
+<h2>$0.00</h2>
+<p>&nbsp</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h5>Consumables Inventory - Summary</h5>
+<div class='row'>
+<div class='col-md-3 mb-2 mt-2'>
+<div class='card bg-primary text-white'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>No. of RFID tags PRINTED</h5>
+</div>
+<div class='card-text'>
+<h2>0</h2>
+</div>
+</div>
+</div>
+</div>
+<div class='col-md-3 mb-2 mt-2'>
+<div class='card bg-secondary text-white'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>No. of RFID tags SHELVED</h5>
+</div>
+<div class='card-text'>
+<h2>0</h2>
+</div>
+</div>
+</div>
+</div>
+<div class='col-md-3 mb-2 mt-2'>
+<div class='card text-white bg-warning'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>Excess Purchase</h5>
+</div>
+<div class='card-text'>
+<h2>$0.00</h2>
+</div>
+</div>
+</div>
+</div>
+<div class='col-md-3 mb-2 mt-2'>
+<div class='card text-white bg-danger'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>Missing Value</h5>
+</div>
+<div class='card-text'>
+<h2>$0.00</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h5>Consumables Inventory - Accuracy</h5>
+<div class='row'>
+<div class='col-md-3 mb-2 mt-2'>
+<a href="/asset_types/analysis?scope=green"><div class='card bg-success text-white'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>Green (90-100%)</h5>
+</div>
+<div class='card-text'>
+<h2>0</h2>
+<p>$0.00</p>
+</div>
+</div>
+</div>
+</a></div>
+<div class='col-md-3 mb-2 mt-2'>
+<a href="/asset_types/analysis?scope=blue"><div class='card bg-info text-white'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>Blue (80-90%)</h5>
+</div>
+<div class='card-text'>
+<h2>0</h2>
+<p>$0.00</p>
+</div>
+</div>
+</div>
+</a></div>
+<div class='col-md-3 mb-2 mt-2'>
+<a href="/asset_types/analysis?scope=orange"><div class='card bg-warning text-white'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>Orange (> 100%)</h5>
+</div>
+<div class='card-text'>
+<h2>0</h2>
+<p>$0.00</p>
+</div>
+</div>
+</div>
+</a></div>
+<div class='col-md-3 mb-2 mt-2'>
+<a href="/asset_types/analysis?scope=red"><div class='card bg-danger text-white'>
+<div class='card-body text-center'>
+<div class='card-title'>
+<h5>Red (< 80%)</h5>
+</div>
+<div class='card-text'>
+<h2>0</h2>
+<p>$0.00</p>
+</div>
+</div>
+</div>
+</a></div>
+</div>
+<div class='row'>
+<div class='col-12 p-4'>
+<form class="mb-3" action="/asset_types/analysis" accept-charset="UTF-8" method="get">
+<div class='row'>
+<div class='col-sm-12'>
+<div class='input-group mb-3 search-box'>
+<input type="hidden" name="scope" id="scope" />
+<input type="search" name="query" id="query" placeholder="Search inventories" class="search-input input-sm form-control" />
+<div class='input-group-append'>
+<button class='btn' data-disable-with='&lt;span class=&quot;translation_missing&quot; title=&quot;translation missing: en.searching&quot;&gt;Searching&lt;/span&gt;...'>
+<i class='fa fa-search'></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+
+</div>
+</div>
+<div class='row'>
+<div class='col-12'>
+<div class='table-responsive'>
+<table class='table'>
+<thead>
+<tr>
+<th>Manufacturer</th>
+<th>Model</th>
+<th class='text-nowrap'>Tracking ID</th>
+<th class='text-right text-nowrap'>Replacement Cost</th>
+<th class='text-right text-nowrap'>Inventory</th>
+<th class='text-right text-nowrap'>Count</th>
+<th class='text-right text-nowrap'>Difference</th>
+<th class='text-right text-nowrap'>
+Value On Books
+</th>
+<th class='text-right text-nowrap'>
+Missing/Excess Dollar Value
+</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+<div class='mt-5 container pagination justify-content-center'>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<footer class='footer'>
+<div class='container-fluid'>
+</div>
+<div class='container-fluid p-t-20 p-b-5'>
+<p class='text-center'>All rights reserved to Twyst Inc. @2019</p>
+</div>
+</footer>
+
+</body>
+</html>
+
