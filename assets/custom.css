@@ -32,3 +32,16 @@ nav .active {
 
 .c-shadow {
   box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07); }
+
+.pg-block .progress {
+  height: 8px;
+  border-radius: 0; }
+
+.wd-15p {
+  width: 15%; }
+
+.wd-20p {
+  width: 20%; }
+
+.wd-30p {
+  width: 30%; }
